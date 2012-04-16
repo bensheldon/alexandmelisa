@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Paola &amp; Greg</title>
+
+<!-- include the Tools -->
+
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+
+<!-- standalone page styling (can be removed) -->
+<link rel="stylesheet" type="text/css" href="styles/standalone.css"/>
+
+<!-- tab styling -->
+<link rel="stylesheet" type="text/css" href="styles/tabs-flowplayer-v2.css"/>
+</head>
+
+<body>
+<div id="header">
+</div>
+
+<!-- tabs work as navigator for scrollable -->
+<ul id="flowtabs" class="navi">
+  <li><a id="t1" href="#home" class="current">&nbsp;</a></li>
+  <li><a id="t2" href="#about">&nbsp;</a></li>
+  <li><a id="t3" href="#proposal">&nbsp;</a></li>
+  <li><a id="t4" href="#place">&nbsp;</a></li>
+  <li><a id="t5" href="#foryou">&nbsp;</a></li>
+  <li><a id="t6" href="#yourtrip">&nbsp;</a></li>
+</ul>
+
+<!-- panes -->
+<div id="flowpanes"> 
+  
+  <!-- wrapper for scrollable items -->
+  <div class="items">
+    <div id="home" class="flowpane"> <br clear="all" />
+    </div>
+    <div id="about" class="flowpane">
+      <div class="column_container">
+        <div class="column">
+          <h2>About the bride</h2>
+          <p> 5' 5" <br>
+            Sometimes curly, Sometimes straight.<br>
+            Big Earrings in The Great Outdoors. </p>
+        </div>
+        <div id="column">
+          <h2>About the groom</h2>
+          <p> Surfing, Snowboarding,<br>
+            Fishing, Hunting,<br>
+            Camping, Biking,<br>
+            Beer Brewing, Beard Growing<br>
+            Russian Dude.</br>
+            A mountain man in the city. </p>
+        </div>
+        <div id="column">
+          <h2>How we met</h2>
+          <p> $0.25 PBR Night at the Hush Hush Lounge Happy Hour! <br>
+            Greg, being the classy guy that he is, asked Paola if he could buy her a PBR.<br>
+            She accepted. </p>
+        </div>
+      </div>
+    </div>
+    <div id="proposal" class="flowpane">
+      <div class="column_left">
+        <h1>The perfect ending to the perfect day. <br>
+          4/24/2010</h1>
+        <h2>How we got engaged</h2>
+        <p> It started as an adventurous day apartment hunting in San Francisco.  After seeing dozens of mediocre poor excuses for apartments, we had a wonderful Russian dinner in the Richmond District.</p>
+        <p>After dinner Greg took Paola to a fabulous show at Yoshi's in SF. When they arrived at home, Greg suggested they walk the dog before going to bed.  What seemed like a typical walk down the street ended with a ring box and a proposal! Pancho was especially excited with the turn of events that evening.</p>
+      </div>
+    </div>
+    <div id="place" class="flowpane">
+      <div class="column_container2">
+        <h2>Information for our guests</h2>
+        <p> Our ceremony and reception will be at the Presidio Log Cabin. </p>
+        <h2>Driving directions</h2>
+        <p>For directions, click here: <a href="http://www.presidio.gov/event/rental/logcabin/log.htm">directions to log cabin</a>. There's plenty of parking in front of the venue. </p>
+      </div>
+    </div>
+    <div id="foryou" class="flowpane">
+      <div id="padding_column">
+        <div class="column_container3">
+          <h2>What to Wear</h2>
+          <p>Dust off that party dress and put on that bow tie!  This ain't no picnic!</p>
+          <p>For the ladies - gowns or cocktail dresses please. <br>
+            For the gentlemen - suits or tuxes. </p>
+          <p>Get fancy! </p>
+          <h2>Things to do in the area</h2>
+          <p>We're narrowing down the list and will post some goodies soon. </p>
+        </div>
+      </div>
+    </div>
+    <div id="yourtrip" class="flowpane">
+      <div id="padding_column">
+        <h1>Where to Stay</h1>
+        <h2>Hotels in the Marina District of San Francisco</h2>
+        <p>The Marina District is a fun neighborhood located near our wedding venue. There is tons of shopping, eating and drinking to be done in that part of town and you're right by the Golden Gate Bridge and the beautiful bay with all it's sail boats. </p>
+        <p> <a href="http://www.coventrymotorinn.com/">The Coventry Inn</a> <br>
+          Nice big rooms in a great historic hotel.  Parking available for 1 car per room.</p>
+        <p><a href="http://www.marinamotel.com">The Marina Motel</a><br>
+          Quirky little historic San Francisco motel.  This place is pet friendly and some of the rooms have kitchens, which can be great if you are staying more than a couple nights (although the food is fantastic in this part of town).  Parking is included for 1 car per room and they give you buy 1 get 1 free breakfasts at one of the local cafes.</p>
+        <h2>Vacation Home Rentals in San Francisco</h2>
+        <p>If you are coming with a group, we recommend a vacation house rental instead of a hotel.  
+          Please email Salvador Squadrito at squadrito@att.net for help with information, arrangements and pricing.</br>
+          You can also look on <a href="http://www.vrbo.com">www.vrbo.com</a> for houses available in San Francisco if you'd like to book it on your own. </p>
+        <p>If you have questions about neighborhoods, please email Paola or Greg at:
+          pnieto33@gmail.com or gladigin@gmail.com </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="footer"> <img src="images/swish-left.png" height="20" width="120">&nbsp;August 6, 2011&nbsp;&bull;&nbsp;<span id="daysleft"></span>&nbsp;days to go!&nbsp;<img src="images/swish-right.png" height="20" width="120"> 
+</div>
+
+
+<!-- activate tabs with JavaScript --> 
+<script>
+// wait until document is fully scriptable
+$(function() {
+
+	// select #flowplanes and make it scrollable. use circular and navigator plugins
+	$("#flowpanes").scrollable({ mousewheel: false }).navigator({
+
+		// select #flowtabs to be used as navigator
+		navi: "#flowtabs",
+
+		// select A tags inside the navigator to work as items (not direct children)
+		naviItem: 'a',
+
+		// assign "current" class name for the active A tag inside navigator
+		activeClass: 'current',
+
+	});
+	
+	var d = new Date();
+	var wedding = Date.parse("Aug 6, 2011 PST");
+	var daysLeft = Math.round(Math.max(0, wedding - d.getTime())/86400000);
+	$("#daysleft").append(daysLeft);
+});
+</script>
+</body>
+</html>

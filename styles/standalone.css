@@ -1,0 +1,102 @@
+body {
+	padding:50px 80px;
+	font-family:"Lucida Grande", "bitstream vera sans", "trebuchet ms", sans-serif, verdana;
+}
+#header {
+	position:absolute;
+	top:50px;
+	left:160px;
+	background:url(../images/paolaheartgreg.png) no-repeat;
+	width:110px;
+	height:60px;
+	border:0;
+	display:block;
+}
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	line-height:16px;
+	font-size:12px;
+	color:#333333;
+	text-align:left;
+}
+ul {
+	list-style:none;
+	line-height:inherit;
+}
+#flowpanes div h1 {
+	color: #F54923;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* get rid of those system borders being generated for A tags */
+a:active {
+	outline:none;
+}
+:focus {
+	-moz-outline-style:none;
+}
+#home {
+	background:url(../images/home.png) no-repeat;
+}
+#about {
+	background:url(../images/about.png) no-repeat;
+}
+.column_container {
+	left:20px;
+	top:175px;
+	width:720px;
+	position:relative;
+}
+.column_container div {
+	float:left;
+	margin: 10px 10px;
+	width: 220px;
+}
+.column {
+	float: left;
+	margin: 40px 30px;
+	width: 180px;
+}
+#proposal {
+	background:url(../images/theproposal-bg.jpg) no-repeat;
+}
+.column_left {
+	left: 167px;
+	position: relative;
+	text-align: center;
+	top: 122px;
+	width: 450px;
+}
+#place {
+	background:url(../images/skyline.png) no-repeat;
+}
+.column_container2 {
+	left: 195px;
+	position: relative;
+	text-align: center;
+	top: 182px;
+	width: 375px;
+}
+.column_container3 {
+	left: 162px;
+	position: relative;
+	text-align: center;
+	top: 100px;
+	width: 450px;
+}
+#foryou {
+	background:url(../images/yourtrip.jpg) no-repeat;
+}
+#yourtrip {
+	background:url(../images/foryou.png) no-repeat;
+}
+#padding_column {
+	margin:0px 0px 0px 15px;
+}
+#footer {
+	color: #006492;
+	font-size: 16px;
+	left: 205px;
+	position: relative;
+	top: 40px;
+}

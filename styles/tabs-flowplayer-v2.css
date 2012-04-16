@@ -1,0 +1,164 @@
+/* everything is constructed with a single background image */
+
+/* root element for tabs */
+#flowtabs {
+	/* dimensions */
+	width:760px;
+	height:31px !important;
+	margin:0 !important;
+	padding:0;
+	/* IE6 specific branch (prefixed with "_") */
+	_margin-bottom:-2px;
+}
+/* single tab */
+#flowtabs li {
+	float:left;
+	margin:0;
+	padding:0;
+	text-indent:0;
+	list-style-type:none;
+}
+/* a- tag inside single tab */
+#flowtabs li a {
+	background: url(/tools/img/tabs/blue_panes.jpg) no-repeat;
+	display:block;
+	height: 38px;
+	width: 105px;
+	padding:0px;
+	margin:0px;
+	left:200px;
+	position:relative;
+	/* font decoration */
+	color:#000;
+	font-size:12px;
+	line-height:33px;
+	text-align:center;
+	text-decoration:none;
+	position:relative;
+	top:30px;
+}
+/* adjust the background image position on each tab */
+#flowtabs #t1 {
+	background:url(../images/home1.png) no-repeat;
+}
+#flowtabs #t2 {
+	background:url(../images/aboutus1.png) no-repeat;
+}
+#flowtabs #t3 {
+	background:url(../images/theproposal1.png) no-repeat;
+}
+#flowtabs #t4 {
+	background:url(../images/theplace1.png) no-repeat;
+}
+#flowtabs #t5 {
+	background:url(../images/foryou1.png) no-repeat;
+}
+#flowtabs #t6 {
+	background:url(../images/yourtrip1.png) no-repeat;
+}
+/* mouseover state */
+#flowtabs a:hover {
+	color:#fff;
+}
+#flowtabs #t1:hover {
+	background:url(../images/home2.png) no-repeat;
+}
+#flowtabs #t2:hover {
+	background:url(../images/aboutus2.png) no-repeat;
+}
+#flowtabs #t3:hover {
+	background:url(../images/theproposal2.png) no-repeat;
+}
+#flowtabs #t4:hover {
+	background:url(../images/theplace2.png) no-repeat;
+}
+#flowtabs #t5:hover {
+	background:url(../images/foryou2.png) no-repeat;
+}
+#flowtabs #t6:hover {
+	background:url(../images/yourtrip2.png) no-repeat;
+}
+/* currently selected tabs */
+#flowtabs a.current {
+	cursor:default;
+	color:#fff;
+	line-height:34px;
+}
+#flowtabs #t1.current {
+	background:url(../images/home3.png) no-repeat;
+}
+#flowtabs #t2.current {
+	background:url(../images/aboutus3.png) no-repeat;
+}
+#flowtabs #t3.current {
+	background:url(../images/theproposal3.png) no-repeat;
+}
+#flowtabs #t4.current {
+	background:url(../images/theplace3.png) no-repeat;
+}
+#flowtabs #t5.current {
+	background:url(../images/foryou3.png) no-repeat;
+}
+#flowtabs #t6.current {
+	background:url(../images/yourtrip3.png) no-repeat;
+}
+/* override the root element to enable s
+
+/* panes */
+#flowpanes {
+	/*background: url(/tools/img/tabs/blue_panes.jpg) no-repeat 0 -100px;	*/	
+	width:760px;
+	height:450px;
+	overflow:hidden;
+	position:relative;
+	clear:both;
+	left:40px;
+	top:20px;
+}
+/* single pane */
+#flowpanes .items .flowpane {
+	display:block;
+	color:#fff;
+	margin: 20px 19px;
+	width: 725px;
+	float:left;
+	height:450px;
+	font-size:14px;
+	position:relative;
+	left:20px;
+}
+#flowpanes .items {
+	display:block;
+	color:#fff;
+	margin: 20px 19px;
+	width: 725px;
+	float:left;
+	height:450px;
+	font-size:14px;
+}
+#flowpanes .items {
+	width:20000em;
+	position:absolute;
+	clear:both;
+	margin:0;
+	padding:0;
+}
+#flowpanes .less, #flowpanes .less a {
+	color:#999 !important;
+	font-size:11px;
+}
+/* some decorations for elements inside single pane */
+#flowpanes div h2 {
+	color: #F54923;
+	font-size: 14px;
+	font-weight: normal;
+}
+#flowpanes a {
+	color:#006492;
+	font-size:14px;
+}
+#flowpanes p, #flowpanes samp {
+}
+#flowpanes .narrow {
+	padding-right:160px;
+}
