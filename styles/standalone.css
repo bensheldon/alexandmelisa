@@ -39,8 +39,8 @@ a:active {
 	background:url(../images/home.png) no-repeat;
 }
 #about {
-	background:url(../images/about.png) no-repeat;
-}
+/*  background:url(../images/about.png) no-repeat;
+*/}
 .column_container {
 	left:20px;
 	top:175px;
